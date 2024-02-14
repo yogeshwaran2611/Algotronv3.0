@@ -1,16 +1,16 @@
 export const set1 = [
     {
     Img: '/images/judgeP/snega.jpg',
-    name: 'Snega',
-    desig: 'App Developer Associate',
-    org: 'Accenture',
+    name: 'JOTHI',
+    desig: 'Associate professor',
+    org: 'CSE DEPT.',
     nameStyle: { right: '-2vw', top: '5vh'},
   },
   {
     Img: '/images/judgeP/kiruthika.jpg',
-    name:'Kiruthika',
-    desig:'Software Engineer',
-    org: 'NeilseinIQ',
+    name:'JAGADEESHWARI',
+    desig:'Assistant professor',
+    org: 'CSE DEPT.',
     nameStyle: { right: '-4vw', top: '9vh'},
   },
   {

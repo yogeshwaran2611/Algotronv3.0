@@ -88,7 +88,7 @@ const Navbar = () => {
         <div className="components">
           <div className="title" onClick={() => window.open("/", "_self")}>
             <img src="/images/diamond.webp" className="logo" alt="Logo" />
-            Hackathon
+            AlgotronV3.0
             <div className="socials">
               <div className="insta">
                 <SocialIcon
@@ -162,11 +162,11 @@ const Navbar = () => {
         <div className="parent-navbar-mobile">
           <div className="components-mobile">
             <div
-              className="title-mobile"
+              className="title-mobile text-xs"
               onClick={() => window.open("/", "_self")}
             >
               <img src="/images/diamond.webp" width="30vw" alt="logo" />
-              Hackathon
+              AlgotronV3.0       
             </div>
             <div className="last-mobile">
               <h2 className="register-mobile">

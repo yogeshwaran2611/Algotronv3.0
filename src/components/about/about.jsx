@@ -52,21 +52,20 @@ const about = () => {
               className="about-srmvec-logo"
             />
           </div>
+        
           <div className="foundation-description" id="about-left">
-            SRM Valliammai Engineering college (An Autonomous Institution) was
-            established on 9th September, 1999. The SRM Valliammai Engineering
-            College is a part of the SRM Group of Educational Institutions,
-            sponsored by the Valliammai Society. The Valliammai Society was
-            founded by Dr.T.R.Paarivendhar , a well-known educationist, in the
-            name of his mother Tmt. R.Valliammai, under whose care and guidance
-            he attained greater heights in his personal development and whose
-            ideals continue to inspire him. On this auspicious moment we
-            celebrate the 25th Foundation Day of SRM Valliammai Engineering
-            college by organising Hackathon on 8th September, 2023.
+            <h3 className="text-3xl my-4 underline">Vision and Mission</h3>
+            <p className="text-base">To provide high quality learning environment through innovative teaching and promote research to produce globally competitive engineers of excellent quality.</p>
+            <h1 className="text-3xl my-4 underline">Mission of the Institute:</h1>
+            <ul>
+              <p className="text-base my-2">To offer education programmes that blend intensive technical training with appropriate guidance inculcating analytical skills and problem solving ability with high degree of professionalism</p>
+              <p className="text-base my-2">To provide healthy environment with excellent facilities for learning, research and innovative thinking</p>
+              <p className="text-base my-2">To educate the students achieve their professional excellence with ethical and social responsibilities.</p>
+            </ul>
           </div>
         </div>
 
-        <div className="srmvec">
+        {/* <div className="srmvec">
           <div
             className="about-srmvec-title "
             id="about-left"
@@ -133,7 +132,7 @@ const about = () => {
             the field, gain hands-on experience, and prepare for careers in
             cyber security.
           </div>
-        </div>
+        </div> */}
       </div>
     </React.Fragment>
   );
