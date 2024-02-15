@@ -28,36 +28,22 @@ const events = () => {
       document.querySelector(".stage1-content").classList.add("active");
     }
     if (stage == "2") {
-      document.querySelector("#line-progress").style.width = "25%";
+      document.querySelector("#line-progress").style.width = "50%";
       document
         .querySelectorAll(".section-content")
         .forEach((stage) => stage.classList.remove("active"));
       document.querySelector(".stage2-content").classList.add("active");
     }
-    if (stage == "3") {
-      document.querySelector("#line-progress").style.width = "50%";
-      document
-        .querySelectorAll(".section-content")
-        .forEach((stage) => stage.classList.remove("active"));
-      document.querySelector(".stage3-content").classList.add("active");
-    }
-    if (stage == "4") {
-      document.querySelector("#line-progress").style.width = "75%";
-      document
-        .querySelectorAll(".section-content")
-        .forEach((stage) => stage.classList.remove("active"));
-      document.querySelector(".stage4-content").classList.add("active");
-    }
+    
   };
   return (
     <React.Fragment>
       <div className="parent-events">
         <div className="events-progress-bar">
           <ul>
-            <li onClick={() => handleStage("1")}>Stage 1</li>
-            <li onClick={() => handleStage("2")}>Stage 2</li>
-            <li onClick={() => handleStage("3")}>Stage 3</li>
-            <li onClick={() => handleStage("4")}>Stage 4</li>
+            <li onClick={() => handleStage("1")}>Technical</li>
+            <li onClick={() => handleStage("2")}>Non- Technical</li>
+            
           </ul>
           <div id="line">
             <div id="line-progress"></div>

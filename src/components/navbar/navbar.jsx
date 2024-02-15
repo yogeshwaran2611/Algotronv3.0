@@ -19,34 +19,7 @@ const Navbar = () => {
     window.open("https://www.instagram.com/srmveccsisb");
     window.open("https://www.instagram.com/whitehatians");
   };
-  const handleFb = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Facebook",
-    });
-    window.open("https://www.facebook.com/srmveccsisb");
-    window.open("https://www.facebook.com/@whitehatians");
-  };
-  const handleYt = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Youtube",
-    });
-    window.open("https://www.youtube.com/@SRMVECCSIAN");
-    window.open("https://www.youtube.com/@whitehatians");
-  };
 
-  const handleDiscord = () => {
-    ReactGA.event({
-      category: "Social Icon",
-      action: "click",
-      label: "Youtube",
-    });
-
-    window.open("https://discord.gg/w77zzjVkEB?event=1141717757382107197");
-  };
   const handleRegisterClick = () => {
     ReactGA.event({
       category: "Button",
@@ -100,37 +73,7 @@ const Navbar = () => {
                   }}
                 />
               </div>
-              <div className="fb">
-                <SocialIcon
-                  onClick={handleFb}
-                  network="facebook"
-                  style={{
-                    height: "3vw",
-                    width: "3vw",
-                  }}
-                />
-              </div>
-
-              <div className="yt">
-                <SocialIcon
-                  onClick={handleYt}
-                  network="youtube"
-                  style={{
-                    height: "3vw",
-                    width: "3vw",
-                  }}
-                />
-              </div>
-              <div className="discord-icon">
-                <SocialIcon
-                  onClick={handleDiscord}
-                  network="discord"
-                  style={{
-                    height: "3vw",
-                    width: "3vw",
-                  }}
-                />
-              </div>
+              
             </div>
           </div>
 
@@ -145,16 +88,11 @@ const Navbar = () => {
               <p onClick={() => handleScroll("#schedule")}>Schedule</p>
             </li>
             <li>
-              <p onClick={() => handleScroll("#faqs")}>FAQs</p>
-            </li>
-            <li>
               <p onClick={() => handleScroll("#contact")}>Contact</p>
             </li>
           </ul>
           <div className="last">
-            <h2 className="register">
-              <p onClick={handleRegisterClick}> Register</p>
-            </h2>
+            
           </div>
         </div>
       </div>
@@ -169,11 +107,7 @@ const Navbar = () => {
               AlgotronV3.0       
             </div>
             <div className="last-mobile">
-              <h2 className="register-mobile">
-                <a href="https://forms.gle/mqHSf1kpoTUiMURH6" target="_blank">
-                  Register
-                </a>
-              </h2>
+              
             </div>
             <Grid
               className="navbar-menu-mobile "
@@ -190,9 +124,6 @@ const Navbar = () => {
               </li>
               <li>
                 <p onClick={() => handleScroll("#schedule")}>Schedule</p>
-              </li>
-              <li>
-                <p onClick={() => handleScroll("#faqs")}>FAQs</p>
               </li>
               <li>
                 <p onClick={() => handleScroll("#contact")}>Contact</p>

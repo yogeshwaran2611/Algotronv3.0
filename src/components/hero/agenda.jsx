@@ -33,27 +33,16 @@ const section2 = () => {
         <div className="agenda" id="agenda">
           <div className="title2">
             <img src="/images/rrr.webp" alt="arrow-logo" />
-            <h1 className="title-name">Agenda</h1>
+            <h1 className="title-name">About</h1>
           </div>
           <div className="agenda-text">
             <div className="agenda-lottie-animation">
-              <Lottie
-                animationData={animationData}
-                lottieRef={ref}
-                style={{
-                  width: "40vw",
-                  height: "50vh",
-                  scale: "1.3",
-                  // background: "red",
-                }}
-                loop={false}
-                onMouseEnter={() => {
-                  ref.current.stop();
-                  ref.current.setSpeed(0.5);
-                  ref.current.play();
-                }}
-                onMouseLeave={() => ref.current.goToAndStop(1000)}
-              />
+            <img
+            src="/images/algo.webp"
+            alt="algo logo"
+            width="1200vw"
+            className="hero-srmvec-logo"
+          />
             </div>
             <div className="agenda-des">
               A hackathon is an event where individuals or teams come together

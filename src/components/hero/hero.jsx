@@ -22,13 +22,14 @@ const hero = () => {
     });
     window.open("https://forms.gle/mqHSf1kpoTUiMURH6");
   };
-  const handleCardClicks = (card) => {
+ 
+  const handleevents = () => {
     ReactGA.event({
       category: "Button",
       action: "click",
-      label: `${card}`,
+      label: `Events Download`,
     });
-    window.open(`${card}`, "_self");
+    window.open("/docs/Abstract_Reference_Hackathon.pdf");
   };
   const [countdown, setCountdown] = useState({
     days: 0,
@@ -90,27 +91,20 @@ const hero = () => {
   }, []);
   return (
     <React.Fragment>
+      
       <div className="parent_hero">
-        {/* <div className="progress_bar"></div> */}
+      
         <div className=" tag-hero-mobile">
-          <img
-            src=""
-            width="40vw"
-            className="TPGIT_LOGO"
-          />
-          <div className="tag">
-            <div>
-              <div>Celebrating 25</div>
-              <span>th</span>
-            </div>
-            Foundation Day of SRMVEC
-          </div>
-          <img
-            src="/images/srmvec.webp"
-            alt="srmvec logo"
-            width="60vw"
+        <img
+            src="/images/tpgit.webp"
+            alt="tpgit logo"
+            width="100vw"
             className="hero-srmvec-logo"
           />
+          <div className="tag">
+          Thanthai Periyar Government Institute of Technology, Vellore - 632002
+          </div>
+          
         </div>
 
         {/* ----------------------- Page 1 ------------------------- */}
@@ -122,7 +116,7 @@ const hero = () => {
               <span className="hackathon"> {"Algotron 3.0"}</span>
               <br />
               {/* <p className="tag1"> A National Level 24 Hour Hackathon</p> */}
-              {/* <span className="hackathon">Hackathon</span> */}
+              
               
             </div>
 
@@ -166,6 +160,8 @@ const hero = () => {
           <div className="right_side">
             {/* -------------------------- Column 1 * ---------------------------------- */}
 
+            
+            {/* -------------------------- Column 2 * ---------------------------------- */}
             <div className="col1 animated-div">
               <h3 className="text">
                 <div>
@@ -176,38 +172,17 @@ const hero = () => {
                 </div>
                 <Calender className="calender-icon" />
               </h3>
-              <p
-                className="text2"
-                onClick={() => handleCardClicks("/guidelines")}
-              >
-                Guidelines <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-              <p className="text3" onClick={() => handleCardClicks("/events")}>
+              
+              <p className="text3" onClick={() => handleevents()}>
                 Events <ArrowRightWhite className="arrow-right-icon" />
               </p>
             </div>
-            {/* -------------------------- Column 2 * ---------------------------------- */}
-            <div className="col2 animated-div">
-              <h3 className="text4">
-                Information Details <Info className="info-icon" />
-              </h3>
-              <p className="text5" onClick={() => handleCardClicks("/about")}>
-                About
-                <ArrowRightWhite className="arrow-right-icon" />
-              </p>
-            </div>
             {/* -------------------------- Column 3 * ---------------------------------- */}
-            <div className="col3 animated-div">
-              <div className="flex justify-items-start">
-                <h3 className="text7">WorkShop</h3>
-              </div>
-              <p className="text8">
-                Block Chain
-              </p>
-              <p className="text9" >
-                Web 3.0
-              </p>
-            </div>
+            
+            <div className="col5 animated-div"></div>
+            <div className="col5 animated-div"></div>
+
+            
             {/* -------------------------- Column 4  ---------------------------------- */}
             <div
               className="col4 animated-div"
@@ -230,7 +205,10 @@ const hero = () => {
               </div>
             </div>
             {/* -------------------------- Column 5  ---------------------------------- */}
-            <div className="col5 "></div>
+            <div className="col5 animated-div"></div>
+            
+            <br></br>
+            
             {/* -------------------------- Column 6  ---------------------------------- */}
             <div className="col6 animated-div">
               <h3 className="text13">
@@ -238,13 +216,18 @@ const hero = () => {
                 <div className="flex justify-center items-center gap-1"></div>
               </h3>
               <div className="flex items-start justify-between flex-col">
-                <p className="text14">COMPUTER SCIENCE DEPARTMENT </p>
-                {/* <p className="text15">Whitehatians Cyber Club - VEC</p> */}
+                <p className="text14"> DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING </p>
+                
                 <div className="round2"></div>
               </div>
             </div>
           </div>
+          
         </section>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         {/* -------------------------- Page 2 -------------------------- */}
       </div>
       <Agenda />

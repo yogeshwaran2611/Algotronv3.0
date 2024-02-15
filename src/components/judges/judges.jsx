@@ -21,10 +21,7 @@ const judges = () => {
         <h1>judge panel</h1>
       </div>
       <section className="judges">
-      <Judge3 mem = {set1} />
-      <Judge3 mem = {set2} />
-      <Judge3 mem = {set3} />
-      <Judge3 mem = {set4} />
+      
       </section>
     </div>
   );
