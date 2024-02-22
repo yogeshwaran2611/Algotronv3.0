@@ -11490,7 +11490,7 @@ a:hover {
   min-height: 600px;
   text-align: center;
   color: #fff;
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../imgs/algotron.jpg);
   background-size: cover;
   background-position: center;
   -webkit-transition: .2s;
@@ -11681,7 +11681,7 @@ body.light-theme .theme-selector .spinner i {
 }
 
 body.light-theme .header {
-  background-image: url(../imgs/header-light.jpg);
+  background-image: url(../imgs/omniplex.jpg);
 }
 
 body.light-theme .header .overlay {
